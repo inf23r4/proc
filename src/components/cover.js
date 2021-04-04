@@ -6,7 +6,8 @@ function Cover() {
     return (
         <div className="cover-container">
             <video className="Video" src={ coverVideo } autoPlay loop muted />
-            
+            <h1>INFFQU</h1>
+            <p>Developer / Designer</p>
         </div>
     )
 }

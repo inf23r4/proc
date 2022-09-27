@@ -1,28 +1,16 @@
-import React, { useState, useEffect }from "react"
+import React from "react"
 import Cover from "./components/cover";
-import "./App.css"
 import Navbar from "./components/navbar"
+import { Provider } from "./context/provider";
 
 
 function App() {
 
-  const [scrollHeingt, setscrollHeingt] = useState (0);
-
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setscrollHeingt(position)
-  };
-
-  useEffect(() =>{
-    window.addEventListener ("scroll", handleScroll);
-  },[scrollHeingt])
-
-
   return (
-    <div className="App">
-      <Navbar isScrolling = {scrollHeingt}/>
+    <Provider>
+      <Navbar/>
       <Cover/>
-    </div>
+    </Provider>
   )
 
 }

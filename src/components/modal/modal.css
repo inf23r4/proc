@@ -1,0 +1,18 @@
+.modal-container {
+    width: 240px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top:43px;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    height: min-content;
+
+
+}
+.item-container{
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
